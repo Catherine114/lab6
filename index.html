@@ -24,12 +24,78 @@
             </ul>
         </nav>
 	</div>
-	<div class="container2" style="background-color: #E6E6FA">
+	<div class="container2 bg-light text-dark">
 		<p>Transmission Control Protocol/Internet Protocol (TCP/IP) - это промышленный стандарт стека протоколов, разработанный для глобальных сетей.</p>
 	</div>
+	<form>
+  		<div class="mb-3">
+    		<label for="exampleInputEmail1" class="form-label">Email:</label>
+    		<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    		<div id="emailHelp" class="form-text">Мы никогда не поделимся вашими данными с кем-нибудь еще.</div>
+  		</div>
+  		<div class="mb-3">
+    		<label for="exampleInputPassword1" class="form-label">Пароль</label>
+    		<input type="password" class="form-control" id="exampleInputPassword1">
+  		</div>
+  		<div class="mb-3 form-check">
+    		<input type="checkbox" class="form-check-input" id="exampleCheck1">
+    		<label class="form-check-label" for="exampleCheck1">Я согласен на персональную обработку данных</label>
+    	</div>
+  		<button type="submit" class="btn btn-primary">Отправить</button>
+	</form>
 	<figure class="figure">
 		<img src="zastavka.jpg" class="rounded mx-auto d-block" alt="...">
     </figure>
+    <div class="container-fluid bg-light text-dark">
+    	<h5 id="1" class="title-2 bg-secondary text-white">История</h5>
+    	<p>Стек протоколов TCP/IP был создан на основе NCP (Network Control Protocol) группой разработчиков под руководством Винтона Серфа в 1972 году. В июле 1976 года Винт Серф и Боб Кан впервые продемонстрировали передачу данных с использованием TCP по трём различным сетям. Пакет прошел по следующему маршруту: Сан-Франциско — Лондон — Университет Южной Калифорнии. К концу своего путешествия пакет проделал 150 тысяч км, не потеряв ни одного бита. В 1978 году Серф, Джон Постел и Дэнни Кохэн[en] решили выделить в TCP две отдельные функции: TCP и IP (англ. Internet Protocol, межсетевой протокол). TCP был ответственен за разбивку сообщения на датаграммы (англ. datagram) и соединение их в конечном пункте отправки. IP отвечал за передачу (с контролем получения) отдельных датаграмм. Вот так родился современный протокол Интернета. А с 1 января 1983 года ARPANET перешла на новый протокол. Этот день принято считать официальной датой рождения Интернета.</p>
 
+		<p>Формальная спецификация и стандарты</p>
+		<p>Технические стандарты, лежащие в основе набора TCP/IP протоколов, были переданы Инженерному совету Интернета (IETF).
+
+		Характеристикой архитектуры Internet Protocol Suite является широкое разделение на рабочие области для протоколов, составляющих его основную функциональность. Определяющей спецификацией пакета является RFC 1122, которая в общих чертах описывает четыре уровня абстракции[5][6]. Они выдержали испытание временем, поскольку IETF никогда не изменяла эту структуру. Как таковая модель сети TCP/IP предшествует модели OSI, более всеобъемлющей эталонной структуре для общих сетевых систем.</p>
+    </div>
+    <div class="container-fluid bg-light text-dark">
+    	<h5 id="2" class="title-2 bg-secondary text-white">Уровни стека TCP/IP</h5>
+    	<p>Стек протоколов TCP/IP включает в себя четыре уровня[6]:
+
+			<p>Прикладной уровень (Application Layer),</p>
+			<p>Транспортный уровень (Transport Layer),</p>
+			<p>Межсетевой уровень (Сетевой уровень[7]) (Internet Layer),</p>
+			<p>Канальный уровень (Network Access Layer).</p>
+			<p>Протоколы этих уровней полностью реализуют функциональные возможности модели OSI. На стеке протоколов TCP/IP построено всё взаимодействие пользователей в IP-сетях. Стек является независимым от физической среды передачи данных, благодаря чему, в частности, обеспечивается полностью прозрачное взаимодействие между проводными и беспроводными сетями.</p>
+
+			<table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Уровни</th>
+                    <th scope="col">Протоколы</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Прикладной(Application layer)</td>
+                    <td>напр., HTTP, RTSP, FTP, DNS</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Транспортный(Transport Layer)</td>
+                    <td>напр., TCP, UDP, SCTP, DCCP(RIP, протоколы маршрутизации, подобные OSPF, что работают поверх IP, являются частью сетевого уровня)</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Сетевой (Межсетевой)(Internet Layer)</td>
+                    <td>Для TCP/IP это IP(вспомогательные протоколы, вроде ICMP и IGMP, работают поверх IP, но тоже относятся к сетевому уровню; протокол ARP является самостоятельным вспомогательным протоколом, работающим поверх канального уровня)</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Уровень сетевого доступа (Канальный)(Network Access Layer)</td>
+                    <td>Ethernet, IEEE 802.11 WLAN, SLIP, Token Ring, ATM и MPLS, физическая среда и принципы кодирования информации, T1, E1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
