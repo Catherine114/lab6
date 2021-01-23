@@ -27,25 +27,27 @@
 	<div class="container2 bg-light text-dark">
 		<p>Transmission Control Protocol/Internet Protocol (TCP/IP) - это промышленный стандарт стека протоколов, разработанный для глобальных сетей.</p>
 	</div>
-	<form>
-  		<div class="mb-3">
-    		<label for="exampleInputEmail1" class="form-label">Email:</label>
-    		<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    		<div id="emailHelp" class="form-text">Мы никогда не поделимся вашими данными с кем-нибудь еще.</div>
-  		</div>
-  		<div class="mb-3">
-    		<label for="exampleInputPassword1" class="form-label">Комментарий</label>
-    		<input type="password" class="form-control" id="exampleInputPassword1">
-  		</div>
-  		<div class="mb-3 form-check">
-    		<input type="checkbox" class="form-check-input" id="exampleCheck1">
-    		<label class="form-check-label" for="exampleCheck1">Я согласен на персональную обработку данных</label>
-    	</div>
-  		<button type="submit" class="btn btn-primary">Отправить</button>
-	</form>
+    <div class="container-fluid input-group ">
+	   <form method="post" action="#" autocomplete="off">
+            <div class="form-group">
+                <label for="email">Email адрес</label>
+                <input name="email" type="email" class="form-control col-xs-2" id="email" placeholder="Введите email">
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input name="password" type="password" class="form-control col-xs-10" id="password" placeholder="Введите пароль">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="save">
+                <label name="save" class="form-check-label" for="save">запомнить меня</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Войти</button>
+        </form>
+    </div>
+    <div class="container-fluid">
 	<figure class="figure">
 		<img src="zastavka.jpg" class="rounded mx-auto d-block" alt="...">
-    </figure>
+    </figure></div>
     <div class="container-fluid bg-light text-dark">
     	<h5 id="1" class="title-2 bg-secondary text-white">История</h5>
     	<p>Стек протоколов TCP/IP был создан на основе NCP (Network Control Protocol) группой разработчиков под руководством Винтона Серфа в 1972 году. В июле 1976 года Винт Серф и Боб Кан впервые продемонстрировали передачу данных с использованием TCP по трём различным сетям. Пакет прошел по следующему маршруту: Сан-Франциско — Лондон — Университет Южной Калифорнии. К концу своего путешествия пакет проделал 150 тысяч км, не потеряв ни одного бита. В 1978 году Серф, Джон Постел и Дэнни Кохэн[en] решили выделить в TCP две отдельные функции: TCP и IP (англ. Internet Protocol, межсетевой протокол). TCP был ответственен за разбивку сообщения на датаграммы (англ. datagram) и соединение их в конечном пункте отправки. IP отвечал за передачу (с контролем получения) отдельных датаграмм. Вот так родился современный протокол Интернета. А с 1 января 1983 года ARPANET перешла на новый протокол. Этот день принято считать официальной датой рождения Интернета.</p>
